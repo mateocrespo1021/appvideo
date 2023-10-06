@@ -1,0 +1,14 @@
+<div class="row p-3 buscador">
+  <div class="col-12">
+    <!-- Busqueda -->
+    <h1>Buscador de Videos</h1>
+    <videos-search></videos-search>
+  </div>
+  <div class="col-12 pt-2">
+    <!-- Listado Videos-->
+    <div *ngIf="alerta" class="alert alert-danger" role="alert">
+     {{mensaje}}
+    </div>
+    <videos-card-list [videos]="videos"></videos-card-list>
+  </div>
+</div>

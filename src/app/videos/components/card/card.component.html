@@ -1,0 +1,6 @@
+<div class="video card mb-2 text-center bg-dark" *ngIf="video && video.video_files && video.video_files.length > 0">
+    <video controls>
+        <source [src]="video.video_files[0].link" type="video/mp4" >
+    </video>
+</div>
+
